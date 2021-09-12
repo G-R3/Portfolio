@@ -1,0 +1,7 @@
+$bgColor: #202020;
+$fontColor: #afc8dd;
+$fontSize: (
+    "lg": clamp(1rem, calc(15vw + 1rem), 5rem),
+    "md": 2rem,
+    "sm": 1rem,
+);
