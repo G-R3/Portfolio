@@ -1,5 +1,6 @@
 @import "./variables";
-
+@import "./globals";
+@import "./navbar";
 * {
     margin: 0;
     padding: 0;
@@ -9,4 +10,5 @@ body {
     background-color: $bgColor;
     color: $fontColor;
     font-size: map-get($fontSize, $key: "sm");
+    font-family: $fontFamily;
 }

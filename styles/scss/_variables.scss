@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+$fontFamily: "Poppins", sans-serif;
 $bgColor: #202020;
+$accentColor: #fe019a;
 $fontColor: #afc8dd;
 $fontSize: (
     "lg": clamp(1rem, calc(15vw + 1rem), 5rem),
