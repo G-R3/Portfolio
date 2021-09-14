@@ -1,0 +1,31 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    .container-left {
+        h2 {
+            font-size: map-get($fontSize, $key: "md");
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: map-get($fontSize, $key: "sm");
+            max-width: 70ch;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        img {
+            margin-top: 0;
+        }
+    }
+}
