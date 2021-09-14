@@ -2,6 +2,7 @@
 @import "./globals";
 @import "./navbar";
 @import "./landing";
+@import "./about";
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +13,9 @@ body {
     color: $fontColor;
     font-size: map-get($fontSize, $key: "sm");
     font-family: $fontFamily;
+    padding: 0 1.2rem;
+
+    @media (min-width: 900px) {
+        padding: 0 1.8rem;
+    }
 }
