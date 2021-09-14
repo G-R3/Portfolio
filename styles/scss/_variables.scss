@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 $fontFamily: "Poppins", sans-serif;
-$bgColor: #202020;
+$bgColor: #212121;
 $accentColor: #fe019a;
 $fontColor: #afc8dd;
 $fontSize: (
-    "lg": clamp(1rem, calc(15vw + 1rem), 5rem),
-    "md": 2rem,
-    "sm": 1rem,
+    "lg": clamp(1rem, calc(4vw + 1rem), 5rem),
+    "md": 1.6rem,
+    "sm": 1.2rem,
 );
