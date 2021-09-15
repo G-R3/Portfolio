@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     .landing-info {
-        font-size: map-get($fontSize, $key: "md");
+        font-size: map-get($fontSize, $key: "sm");
         h1 {
             width: fit-content;
             position: relative;
@@ -20,6 +20,9 @@
                 left: 0;
             }
         }
+        @media (min-width: 768px) {
+            font-size: map-get($fontSize, $key: "md");
+        }
     }
 
     .social-links {
@@ -31,17 +34,18 @@
                 cursor: pointer;
                 border-radius: 5px;
                 color: inherit;
-                padding: 0.5rem 0.7rem;
+                padding: 0.4rem 0.6rem;
                 border: none;
                 background-color: #424242;
-                font-size: 1.2rem;
+                font-size: map-get($fontSize, $key: "sm");
                 opacity: 0.7;
                 &:hover {
                     opacity: 1;
                 }
 
                 @media (min-width: 768px) {
-                    padding: 0.8rem 1rem;
+                    padding: 0.6rem 1rem;
+                    // font-size: 1.2rem;
                 }
             }
         }
