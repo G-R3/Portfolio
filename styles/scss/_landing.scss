@@ -20,6 +20,9 @@
                 left: 0;
             }
         }
+        @media (min-width: 578px) {
+            font-size: map-get($fontSize, $key: "md");
+        }
     }
 
     .social-links {
@@ -42,6 +45,7 @@
 
                 @media (min-width: 768px) {
                     padding: 0.6rem 0.7rem;
+
                 }
             }
         }
