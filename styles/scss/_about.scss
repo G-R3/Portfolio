@@ -10,7 +10,6 @@
             margin-bottom: 0.8rem;
         }
         p {
-            font-size: map-get($fontSize, $key: "sm");
             max-width: 70ch;
         }
     }
