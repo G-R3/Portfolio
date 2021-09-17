@@ -1,0 +1,31 @@
+.tag {
+    display: inline-block;
+    padding: 0.125rem 0.2rem;
+    margin: 0 0.2rem 0.2rem 0;
+}
+.tag-html {
+    background-color: #c73b08;
+    color: #f4f4f4;
+}
+
+.tag-css {
+    background-color: rgb(16, 119, 214);
+    color: #ffffff;
+}
+
+.tag-javascript {
+    background-color: #ffff00;
+    color: black;
+}
+.tag-express {
+    background-color: #424242;
+    color: white;
+}
+.tag-mongo {
+    background-color: #13aa52;
+    color: #ffff;
+}
+.tag-node {
+    background-color: #026e00;
+    color: #fff;
+}
