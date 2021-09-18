@@ -5,40 +5,25 @@
     align-items: center;
     margin-top: 10rem;
     h2 {
-        font-size: map-get($fontSize, $key: "lg");
+        font-size: map-get($fontSize, $key: "md");
     }
     p {
         font-size: map-get($fontSize, $key: "sm");
         span {
-            color: $accentColor;
+            color: $pink;
         }
     }
     .social-links {
-        margin-top: 2.5rem;
+        margin-top: 1.8rem;
+        display: flex;
         a {
             @include resetLinks();
             margin-right: 0.5rem;
-            button {
-                cursor: pointer;
-                border-radius: 5px;
-                color: inherit;
-                padding: 0.5rem;
-                border: none;
-                background-color: #424242;
-                font-size: map-get($fontSize, $key: "sm");
-                opacity: 0.7;
-                &:hover {
-                    opacity: 1;
-                }
-
-                @media (min-width: 768px) {
-                    padding: 0.6rem 0.7rem;
-                }
-            }
+            @include buttons();
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-width-sm) {
         margin-top: 16rem 0;
     }
 }

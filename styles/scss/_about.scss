@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     .container-left {
         h2 {
             font-size: map-get($fontSize, $key: "md");
@@ -11,6 +11,7 @@
         }
         p {
             max-width: 70ch;
+            font-size: map-get($fontSize, $key: "sm");
         }
     }
 
@@ -20,9 +21,9 @@
         margin-top: 1.5rem;
     }
 
-    @media (min-width: 900px) {
+    @media (min-width: $screen-width-lg) {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         img {
             margin-top: 0;
         }

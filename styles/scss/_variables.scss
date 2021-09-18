@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 $fontFamily: "Poppins", sans-serif;
-$bgColor: #212121;
-$accentColor: #fe019a;
-$fontColor: #afc8dd;
+$gray: #212121;
+$gray-2: #302f2f;
+$gray-3: #424242;
+$pink: #fe019a;
+$text-color: #afc8dd;
+$transition-speed: 300ms;
+$screen-width-sm: 768px;
+$screen-width-lg: 900px;
 $fontSize: (
-    "lg": clamp(1.5rem, 5vw, 4rem),
-    "md": clamp(1.5rem, 2.5vw, 3rem),
-    "sm": clamp(0.8rem, 1.25vw, 1.5rem),
-
+    "lg": clamp(1.5rem, 5vw, 10rem),
+    "md": clamp(1.5rem, 3vw, 2.5rem),
+    "sm": clamp(0.8rem, 1vw, 1.5rem),
 );

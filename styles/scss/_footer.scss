@@ -1,5 +1,4 @@
 .footer {
-    // font-size: map-get($fontSize, $key: "sm");
     font-size: clamp(0.6rem, calc(1vw +1rem), 1.125rem);
     display: flex;
     flex-direction: column;
@@ -8,7 +7,7 @@
 
     small {
         span {
-            color: $accentColor;
+            color: $pink;
         }
     }
 }
