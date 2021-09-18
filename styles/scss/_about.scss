@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     .container-left {
         h2 {
             font-size: map-get($fontSize, $key: "md");
@@ -23,7 +23,7 @@
 
     @media (min-width: 900px) {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         img {
             margin-top: 0;
         }

@@ -2,16 +2,16 @@
 #projects {
     display: flex;
     flex-direction: column;
-    margin: 6rem 0;
+    margin-bottom: 6rem;
     h2 {
-        align-self: center;
+        text-align: center;
         font-size: map-get($fontSize, $key: "md");
-        margin-bottom: 0.8rem;
+        margin-bottom: 3rem;
     }
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 350px));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 450px));
         justify-content: space-evenly;
         grid-gap: 2rem;
 
