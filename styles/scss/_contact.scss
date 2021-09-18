@@ -5,7 +5,7 @@
     align-items: center;
     margin-top: 10rem;
     h2 {
-        font-size: map-get($fontSize, $key: "lg");
+        font-size: map-get($fontSize, $key: "md");
     }
     p {
         font-size: map-get($fontSize, $key: "sm");

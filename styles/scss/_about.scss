@@ -11,6 +11,7 @@
         }
         p {
             max-width: 70ch;
+            font-size: map-get($fontSize, $key: "sm");
         }
     }
 

@@ -5,6 +5,9 @@
     justify-content: center;
     align-items: center;
     .landing-info {
+        p {
+            font-size: map-get($fontSize, $key: "sm");
+        }
         h1 {
             font-size: map-get($fontSize, $key: "lg");
             width: fit-content;
@@ -19,9 +22,6 @@
                 bottom: 0;
                 left: 0;
             }
-        }
-        @media (min-width: 578px) {
-            font-size: map-get($fontSize, $key: "md");
         }
     }
 
@@ -45,7 +45,6 @@
 
                 @media (min-width: 768px) {
                     padding: 0.6rem 0.7rem;
-
                 }
             }
         }

@@ -14,7 +14,6 @@
 body {
     background-color: $bgColor;
     color: $fontColor;
-    font-size: map-get($fontSize, $key: "sm");
     font-family: $fontFamily;
 
     .main-container {

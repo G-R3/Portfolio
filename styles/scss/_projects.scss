@@ -11,8 +11,7 @@
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 400px));
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 350px));
         justify-content: space-evenly;
         grid-gap: 2rem;
 
