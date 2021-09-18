@@ -146,6 +146,9 @@
 
 #landing .social-links {
   margin-top: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #landing .social-links a {
@@ -155,6 +158,12 @@
 }
 
 #landing .social-links a button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   border-radius: 5px;
   color: inherit;
@@ -163,6 +172,10 @@
   background-color: #424242;
   font-size: clamp(0.8rem, 1vw, 1.5rem);
   opacity: 0.7;
+}
+
+#landing .social-links a button svg {
+  margin-left: 0.5rem;
 }
 
 #landing .social-links a button:hover {
@@ -355,8 +368,8 @@
 }
 
 #projects .card-container .card .card-content .card-header .project-links a:hover span {
-  -webkit-transform: scale(1) translateY(-30px);
-          transform: scale(1) translateY(-30px);
+  -webkit-transform: scale(1) translateY(-40px);
+          transform: scale(1) translateY(-40px);
 }
 
 #projects .card-container .card .card-content .card-body {
@@ -415,6 +428,9 @@
 
 #contact .social-links {
   margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #contact .social-links a {
@@ -424,6 +440,12 @@
 }
 
 #contact .social-links a button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   border-radius: 5px;
   color: inherit;
@@ -432,6 +454,10 @@
   background-color: #424242;
   font-size: clamp(0.8rem, 1vw, 1.5rem);
   opacity: 0.7;
+}
+
+#contact .social-links a button svg {
+  margin-left: 0.5rem;
 }
 
 #contact .social-links a button:hover {
