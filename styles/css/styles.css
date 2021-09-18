@@ -1,4 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.tag {
+  display: inline-block;
+  padding: 0.125rem 0.2rem;
+  margin: 0 0.2rem 0.2rem 0;
+}
+
+.tag-html {
+  background-color: #c73b08;
+  color: #f4f4f4;
+}
+
+.tag-css {
+  background-color: #1077d6;
+  color: #ffffff;
+}
+
+.tag-javascript {
+  background-color: #ffff00;
+  color: black;
+}
+
+.tag-express {
+  background-color: #424242;
+  color: white;
+}
+
+.tag-mongo {
+  background-color: #13aa52;
+  color: #ffff;
+}
+
+.tag-node {
+  background-color: #026e00;
+  color: #fff;
+}
+
 .navbar {
   padding: 1.5rem 5rem;
   display: -webkit-box;
@@ -17,7 +53,7 @@
   text-decoration: none;
   color: #afc8dd;
   font-weight: 700;
-  font-size: clamp(1.5rem, calc(1vw + 1rem), 3rem);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
 
 .navbar .nav {
@@ -85,11 +121,8 @@
           align-items: center;
 }
 
-#landing .landing-info {
-  font-size: clamp(0.5rem, calc(1vw + 0.5rem), 1.3rem);
-}
-
 #landing .landing-info h1 {
+  font-size: clamp(1.5rem, 5vw, 4rem);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -109,7 +142,7 @@
 
 @media (min-width: 578px) {
   #landing .landing-info {
-    font-size: clamp(1.5rem, calc(1vw + 1rem), 3rem);
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
   }
 }
 
@@ -127,10 +160,10 @@
   cursor: pointer;
   border-radius: 5px;
   color: inherit;
-  padding: 0.4rem 0.6rem;
+  padding: 0.5rem;
   border: none;
   background-color: #424242;
-  font-size: clamp(0.5rem, calc(1vw + 0.5rem), 1.3rem);
+  font-size: clamp(0.8rem, 1.25vw, 1.5rem);
   opacity: 0.7;
 }
 
@@ -140,7 +173,7 @@
 
 @media (min-width: 768px) {
   #landing .social-links a button {
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 0.7rem;
   }
 }
 
@@ -162,12 +195,11 @@
 }
 
 #about .container-left h2 {
-  font-size: clamp(1.5rem, calc(1vw + 1rem), 3rem);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
   margin-bottom: 0.8rem;
 }
 
 #about .container-left p {
-  font-size: clamp(0.5rem, calc(1vw + 0.5rem), 1.3rem);
   max-width: 70ch;
 }
 
@@ -192,6 +224,174 @@
   }
 }
 
+.tag {
+  display: inline-block;
+  padding: 0.125rem 0.2rem;
+  margin: 0 0.2rem 0.2rem 0;
+}
+
+.tag-html {
+  background-color: #c73b08;
+  color: #f4f4f4;
+}
+
+.tag-css {
+  background-color: #1077d6;
+  color: #ffffff;
+}
+
+.tag-javascript {
+  background-color: #ffff00;
+  color: black;
+}
+
+.tag-express {
+  background-color: #424242;
+  color: white;
+}
+
+.tag-mongo {
+  background-color: #13aa52;
+  color: #ffff;
+}
+
+.tag-node {
+  background-color: #026e00;
+  color: #fff;
+}
+
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 6rem 0;
+}
+
+#projects h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  margin-bottom: 0.8rem;
+}
+
+#projects .card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(240px, 400px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 400px));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  grid-gap: 2rem;
+}
+
+#projects .card-container .card {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  background-color: #302f2f;
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+}
+
+#projects .card-container .card-img {
+  width: 100%;
+  height: auto;
+}
+
+#projects .card-container .card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+#projects .card-container .card .card-content .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .card-container .card .card-content .card-header h3 {
+  font-size: 1.125rem;
+}
+
+#projects .card-container .card .card-content .card-header .project-links a {
+  text-decoration: none;
+  color: #afc8dd;
+  position: relative;
+  margin: 0 0.4rem;
+  font-size: 1.3rem;
+}
+
+#projects .card-container .card .card-content .card-header .project-links a span {
+  background-color: #424141;
+  border-radius: 5px;
+  padding: 0.3rem;
+  position: absolute;
+  font-size: 0.8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: -25px;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: -webkit-transform 300ms cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: transform 300ms cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: transform 300ms cubic-bezier(0.33, 0.66, 0.66, 1), -webkit-transform 300ms cubic-bezier(0.33, 0.66, 0.66, 1);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#projects .card-container .card .card-content .card-header .project-links a:hover span {
+  -webkit-transform: scale(1) translateY(-30px);
+          transform: scale(1) translateY(-30px);
+}
+
+#projects .card-container .card .card-content .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#projects .card-container .card .card-content .card-body p {
+  margin: 0.5rem 0 1.8rem 0;
+  font-size: 0.8rem;
+}
+
+#projects .card-container .card .card-content .card-body small {
+  font-size: 0.7rem;
+}
+
+#projects .card-container .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -202,7 +402,7 @@
 body {
   background-color: #212121;
   color: #afc8dd;
-  font-size: clamp(0.5rem, calc(1vw + 0.5rem), 1.3rem);
+  font-size: clamp(0.8rem, 1.25vw, 1.5rem);
   font-family: "Poppins", sans-serif;
 }
 

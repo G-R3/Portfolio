@@ -1,0 +1,21 @@
+@import "./tags";
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 0;
+    h2 {
+        align-self: center;
+        font-size: map-get($fontSize, $key: "md");
+        margin-bottom: 0.8rem;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 400px));
+        grid-template-rows: 1fr;
+        justify-content: space-evenly;
+        grid-gap: 2rem;
+
+        @include createCard();
+    }
+}
