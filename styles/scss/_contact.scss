@@ -10,11 +10,11 @@
     p {
         font-size: map-get($fontSize, $key: "sm");
         span {
-            color: $accentColor;
+            color: $pink;
         }
     }
     .social-links {
-        margin-top: 2.5rem;
+        margin-top: 1.8rem;
         display: flex;
         a {
             @include resetLinks();
@@ -23,7 +23,7 @@
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-width-sm) {
         margin-top: 16rem 0;
     }
 }

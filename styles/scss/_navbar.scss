@@ -4,7 +4,9 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.3rem;
-
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     .nav-logo {
         @include resetLinks();
         font-weight: 700;
@@ -18,37 +20,34 @@
             .nav-link {
                 @include resetLinks();
                 padding: 0.2rem 0.8rem;
-                transition: background-color 200ms
+                transition: background-color $transition-speed
                     cubic-bezier(0.33, 0.66, 0.66, 1);
                 &::after {
                     content: "";
                     position: absolute;
-                    background-color: $accentColor;
+                    background-color: $pink;
                     width: 100%;
                     height: 0;
                     bottom: -3px;
                     left: 0;
-                    transition: all 250ms ease;
+                    transition: all $transition-speed ease;
                 }
             }
 
             &:hover {
                 .nav-link {
-                    background-color: rgba($accentColor, $alpha: 0.3);
+                    background-color: rgba($pink, $alpha: 0.3);
                     &::after {
                         height: 3px;
                     }
                 }
             }
         }
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 1.5rem;
-        .nav {
+        @media (max-width: $screen-width-sm) {
             display: none;
         }
+    }
+    @media (max-width: $screen-width-sm) {
+        padding: 1.5rem;
     }
 }

@@ -21,7 +21,7 @@
         margin-top: 1.5rem;
     }
 
-    @media (min-width: 900px) {
+    @media (min-width: $screen-width-lg) {
         flex-direction: row;
         justify-content: space-around;
         img {
