@@ -16,23 +16,248 @@
             <a class="nav-logo" href="#landing">GR</a>
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-item-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-item-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-item-link" href="#contact">Contact</a>
                 </li>
             </ul>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </nav>
 
-        <main class="main-container">
-            <div id="landing">
-                <div class="landing-info">
-                    <p>Hello there I'm</p>
-                    <h1>Gerardo&nbsp;Rodriguez</h1>
-                    <p>and I love building apps the live on the web!</p>
+        <div class="overlay">
+            <main class="main-container">
+                <div id="landing">
+                    <div class="landing-info">
+                        <p>Hello there I'm</p>
+                        <h1>Gerardo&nbsp;Rodriguez</h1>
+                        <p>and I love building apps the live on the web!</p>
+                        <div class="social-links">
+                            <a href="https://github.com/G-R3" target="_blank"
+                                ><button>
+                                    Github <i class="fab fa-github"></i></button
+                            ></a>
+
+                            <a
+                                href="https://www.linkedin.com/in/gerardo-rodriguez-823551213/"
+                                target="_blank"
+                                ><button>
+                                    LinkedIn
+                                    <i class="fab fa-linkedin"></i></button
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="about">
+                    <div class="container-left">
+                        <h2>About Me</h2>
+                        <p>
+                            I'm a student at Kean University studying Computer
+                            Science. I have a wide range of interests such as
+                            Web Development, skateboarding, and learning new
+                            tools. My passion lies on building things that live
+                            on the web but I'm always looking forward to
+                            learning new technologies to build fun and exciting
+                            things!
+                        </p>
+                    </div>
+                    <img
+                        src="./images/portfolio-blob.svg"
+                        alt="portfolio blob image"
+                    />
+                </section>
+
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            <img
+                                src="./images/yelp-camp.png"
+                                alt="project name image"
+                                class="card-img"
+                            />
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>YelpCamp</h3>
+                                    <div class="project-links">
+                                        <a
+                                            href="https://github.com/G-R3"
+                                            target="_blank"
+                                        >
+                                            <i class="fab fa-github"></i>
+                                            <span>View Code</span>
+                                        </a>
+                                        <a
+                                            href="https://yelpcamp-gr.herokuapp.com/"
+                                            target="_blank"
+                                        >
+                                            <i
+                                                class="fas fa-external-link-alt"
+                                            ></i>
+                                            <span>View Site</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        YelpCamp is a full-stack CRUD app that
+                                        allows users to submit campgrounds or
+                                        leave reviews.
+                                    </p>
+                                    <small>
+                                        <span class="tag tag-html">#HTML</span>
+                                        <span class="tag tag-css">#CSS</span>
+                                        <span class="tag tag-javascript"
+                                            >#JavaScript</span
+                                        >
+                                        <span class="tag tag-express"
+                                            >#Express</span
+                                        >
+                                        <span class="tag tag-mongo"
+                                            >#MongoDB</span
+                                        >
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img
+                                src="./images/portfolio-v1.png"
+                                alt="project name image"
+                                class="card-img"
+                            />
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Portfolio-V1</h3>
+                                    <div class="project-links">
+                                        <a
+                                            href="https://github.com/G-R3/Software-Product-Sprint"
+                                            target="_blank"
+                                        >
+                                            <i class="fab fa-github"></i>
+                                            <span>View Code</span>
+                                        </a>
+                                        <a
+                                            href="http://grodriguez1-sps-summer21.appspot.com/"
+                                            target="_blank"
+                                        >
+                                            <i
+                                                class="fas fa-external-link-alt"
+                                            ></i>
+                                            <span>View Site</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        The first iteration of my web portfolio.
+                                        Built while I was a Google Software
+                                        Product Sprint participant.
+                                    </p>
+                                    <small>
+                                        <span class="tag tag-html">#HTML</span>
+                                        <span class="tag tag-css">#CSS</span>
+                                        <span class="tag tag-javascript"
+                                            >#JavaScript</span
+                                        >
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img
+                                src="./images/pokedex-app.png"
+                                alt="project name image"
+                                class="card-img"
+                            />
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>PokéDex</h3>
+                                    <div class="project-links">
+                                        <a
+                                            href="https://github.com/G-R3/PokeDex"
+                                            target="_blank"
+                                        >
+                                            <i class="fab fa-github"></i>
+                                            <span>View Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        A simple web page that fetches and
+                                        display first generation pokemon. It
+                                        utilizes the PokeAPI as the data and
+                                        image source.
+                                    </p>
+                                    <small>
+                                        <span class="tag tag-html">#HTML</span>
+                                        <span class="tag tag-css">#CSS</span>
+                                        <span class="tag tag-javascript"
+                                            >#JavaScript</span
+                                        >
+                                        <span class="tag tag-node"
+                                            >#Node.JS</span
+                                        >
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img
+                                src="./images/todo-app.png"
+                                alt="project name image"
+                                class="card-img"
+                            />
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Todo app</h3>
+                                    <div class="project-links">
+                                        <a
+                                            href="https://github.com/G-R3/Todo-App"
+                                            target="_blank"
+                                        >
+                                            <i class="fab fa-github"></i>
+                                            <span>View Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <p>
+                                        Everyone's favorite project, a todo app.
+                                        A simple app that allows you to create,
+                                        delete, or mark your daily tasks.
+                                    </p>
+                                    <small>
+                                        <span class="tag tag-html">#HTML</span>
+                                        <span class="tag tag-css">#CSS</span>
+                                        <span class="tag tag-javascript"
+                                            >#JavaScript</span
+                                        >
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h2>Get in touch!</h2>
+                    <p>I'm open to work as <span>Web Developer</span></p>
+                    <p>
+                        Lets get in touch and talk about all the wonders of the
+                        web!
+                    </p>
                     <div class="social-links">
                         <a href="https://github.com/G-R3" target="_blank"
                             ><button>
@@ -46,226 +271,21 @@
                                 LinkedIn <i class="fab fa-linkedin"></i></button
                         ></a>
                     </div>
-                </div>
-            </div>
+                </section>
+            </main>
 
-            <section id="about">
-                <div class="container-left">
-                    <h2>About Me</h2>
-                    <p>
-                        I'm a student at Kean University studying Computer
-                        Science. I have a wide range of interests such as Web
-                        Development, skateboarding, and learning new tools. My
-                        passion lies on building things that live on the web but
-                        I'm always looking forward to learning new technologies
-                        to build fun and exciting things!
-                    </p>
-                </div>
-                <img
-                    src="./images/portfolio-blob.svg"
-                    alt="portfolio blob image"
-                />
-            </section>
+            <footer class="footer">
+                <small
+                    >This site was designed and developed by
+                    <span> Gerardo Rodriguez </span></small
+                >
+                <small
+                    >Built using <span>HTML</span>, <span>CSS</span>,
+                    <span>JavaScript</span>, and <span>Sass</span>
+                </small>
+            </footer>
+        </div>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <img
-                            src="./images/yelp-camp.png"
-                            alt="project name image"
-                            class="card-img"
-                        />
-                        <div class="card-content">
-                            <div class="card-header">
-                                <h3>YelpCamp</h3>
-                                <div class="project-links">
-                                    <a
-                                        href="https://github.com/G-R3"
-                                        target="_blank"
-                                    >
-                                        <i class="fab fa-github"></i>
-                                        <span>View Code</span>
-                                    </a>
-                                    <a
-                                        href="https://yelpcamp-gr.herokuapp.com/"
-                                        target="_blank"
-                                    >
-                                        <i class="fas fa-external-link-alt"></i>
-                                        <span>View Site</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p>
-                                    YelpCamp is a full-stack CRUD app that
-                                    allows users to submit campgrounds or leave
-                                    reviews.
-                                </p>
-                                <small>
-                                    <span class="tag tag-html">#HTML</span>
-                                    <span class="tag tag-css">#CSS</span>
-                                    <span class="tag tag-javascript"
-                                        >#JavaScript</span
-                                    >
-                                    <span class="tag tag-express"
-                                        >#Express</span
-                                    >
-                                    <span class="tag tag-mongo">#MongoDB</span>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img
-                            src="./images/portfolio-v1.png"
-                            alt="project name image"
-                            class="card-img"
-                        />
-                        <div class="card-content">
-                            <div class="card-header">
-                                <h3>Portfolio-V1</h3>
-                                <div class="project-links">
-                                    <a
-                                        href="https://github.com/G-R3/Software-Product-Sprint"
-                                        target="_blank"
-                                    >
-                                        <i class="fab fa-github"></i>
-                                        <span>View Code</span>
-                                    </a>
-                                    <a
-                                        href="http://grodriguez1-sps-summer21.appspot.com/"
-                                        target="_blank"
-                                    >
-                                        <i class="fas fa-external-link-alt"></i>
-                                        <span>View Site</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p>
-                                    The first iteration of my web portfolio.
-                                    Built while I was a Google Software Product
-                                    Sprint participant.
-                                </p>
-                                <small>
-                                    <span class="tag tag-html">#HTML</span>
-                                    <span class="tag tag-css">#CSS</span>
-                                    <span class="tag tag-javascript"
-                                        >#JavaScript</span
-                                    >
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img
-                            src="./images/pokedex-app.png"
-                            alt="project name image"
-                            class="card-img"
-                        />
-                        <div class="card-content">
-                            <div class="card-header">
-                                <h3>PokéDex</h3>
-                                <div class="project-links">
-                                    <a
-                                        href="https://github.com/G-R3/PokeDex"
-                                        target="_blank"
-                                    >
-                                        <i class="fab fa-github"></i>
-                                        <span>View Code</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p>
-                                    A simple web page that fetches and display
-                                    first generation pokemon. It utilizes the
-                                    PokeAPI as the data and image source.
-                                </p>
-                                <small>
-                                    <span class="tag tag-html">#HTML</span>
-                                    <span class="tag tag-css">#CSS</span>
-                                    <span class="tag tag-javascript"
-                                        >#JavaScript</span
-                                    >
-                                    <span class="tag tag-node">#Node.JS</span>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img
-                            src="./images/todo-app.png"
-                            alt="project name image"
-                            class="card-img"
-                        />
-                        <div class="card-content">
-                            <div class="card-header">
-                                <h3>Todo app</h3>
-                                <div class="project-links">
-                                    <a
-                                        href="https://github.com/G-R3/Todo-App"
-                                        target="_blank"
-                                    >
-                                        <i class="fab fa-github"></i>
-                                        <span>View Code</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="card-body">
-                                <p>
-                                    Everyone's favorite project, a todo app. A
-                                    simple app that allows you to create,
-                                    delete, or mark your daily tasks.
-                                </p>
-                                <small>
-                                    <span class="tag tag-html">#HTML</span>
-                                    <span class="tag tag-css">#CSS</span>
-                                    <span class="tag tag-javascript"
-                                        >#JavaScript</span
-                                    >
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2>Get in touch!</h2>
-                <p>I'm open to work as <span>Web Developer</span></p>
-                <p>
-                    Lets get in touch and talk about all the wonders of the web!
-                </p>
-                <div class="social-links">
-                    <a href="https://github.com/G-R3" target="_blank"
-                        ><button>Github <i class="fab fa-github"></i></button
-                    ></a>
-
-                    <a
-                        href="https://www.linkedin.com/in/gerardo-rodriguez-823551213/"
-                        target="_blank"
-                        ><button>
-                            LinkedIn <i class="fab fa-linkedin"></i></button
-                    ></a>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <small
-                >This site was designed and developed by
-                <span> Gerardo Rodriguez </span></small
-            >
-            <small
-                >Built using <span>HTML</span>, <span>CSS</span>,
-                <span>JavaScript</span>, and <span>Sass</span>
-            </small>
-        </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>
