@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./globals";
 @import "./navbar";
+@import "./overlay";
 @import "./landing";
 @import "./about";
 @import "./projects";
@@ -10,12 +11,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
 }
 body {
     background-color: $gray;
     color: $text-color;
     font-family: $fontFamily;
-
     .main-container {
         padding: 0 1.2rem;
         @media (min-width: $screen-width-lg) {
