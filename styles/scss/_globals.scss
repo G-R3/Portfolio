@@ -2,7 +2,7 @@
 
 @mixin resetLinks() {
     text-decoration: none;
-    color: $text-color;
+    color: $text-secondary;
 }
 @mixin buttons() {
     button {

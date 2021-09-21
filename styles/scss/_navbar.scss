@@ -73,7 +73,7 @@
         border: none;
         z-index: 2;
         .navbar-toggler-icon {
-            background-color: $text-color;
+            background-color: $text-primary;
             display: inline-block;
             width: 25px;
             height: 3px;
@@ -82,8 +82,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                background-color: $text-color;
-                width: 25px;
+                background-color: $text-primary;
                 height: 3px;
                 left: 0;
                 bottom: 8px;
@@ -92,7 +91,7 @@
             &::before {
                 content: "";
                 position: absolute;
-                background-color: $text-color;
+                background-color: $text-primary;
                 width: 25px;
                 height: 3px;
                 left: 0;
