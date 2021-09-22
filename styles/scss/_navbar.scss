@@ -1,5 +1,4 @@
 .navbar {
-    padding: 1.5rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +6,10 @@
     position: fixed;
     z-index: 1;
     width: 100%;
+    transition: all $transition-speed ease;
+    padding: 0.5rem 1rem;
     .nav-logo {
+        margin-left: 2rem;
         @include resetLinks();
         font-weight: 700;
         font-size: map-get($fontSize, $key: "md");
@@ -15,9 +17,12 @@
     .nav {
         list-style: none;
         display: flex;
-        .nav-item {
+        font-size: clamp(1rem, 1.2vw, 2rem);
+        transition: right $transition-speed ease;
+        &-item {
             position: relative;
-            .nav-link {
+            margin-right: 1rem;
+            &-link {
                 @include resetLinks();
                 padding: 0.2rem 0.8rem;
                 transition: background-color $transition-speed
@@ -35,7 +40,7 @@
             }
 
             &:hover {
-                .nav-link {
+                .nav-item-link {
                     background-color: rgba($pink, $alpha: 0.3);
                     &::after {
                         height: 3px;
@@ -44,10 +49,90 @@
             }
         }
         @media (max-width: $screen-width-sm) {
-            display: none;
+            position: absolute;
+            right: -100%;
+            top: 0;
+            flex-direction: column;
+            align-items: center;
+            background-color: $gray-2;
+            height: 100vh;
+            width: 50%;
+            &-item {
+                margin: 1.2rem 0;
+                position: relative;
+                top: 10vh;
+                font-size: clamp(1rem, calc(1vw + 0.8rem), 1.5rem);
+            }
         }
     }
+    &-toggler {
+        padding: 0.6rem 0.8rem;
+        cursor: pointer;
+        display: none;
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+        .navbar-toggler-icon {
+            background-color: $text-primary;
+            display: inline-block;
+            width: 25px;
+            height: 3px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: $text-primary;
+                width: 25px;
+                height: 3px;
+                left: 0;
+                bottom: 8px;
+                transition: transform $transition-speed ease;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: $text-primary;
+                width: 25px;
+                height: 3px;
+                left: 0;
+                bottom: -8px;
+                transition: transform $transition-speed ease;
+            }
+        }
+        @media screen and (max-width: $screen-width-sm) {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: $screen-width-sm) {
+        padding: 0.5rem 0.2rem;
+        .nav-logo {
+            margin-left: 0.8rem;
+        }
+    }
+
+    .show-nav {
+        right: 0;
+    }
+    .toggle {
+        .navbar-toggler-icon {
+            height: 0;
+            &::after {
+                transform: translateY(6px) rotate(45deg);
+            }
+            &::before {
+                transform: translateY(-10px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+.nav-scrolled {
+    background-color: $gray-2;
+    padding: 0.8rem 3rem;
+
     @media (max-width: $screen-width-sm) {
-        padding: 1.5rem;
+        padding: 0.5rem;
     }
 }
