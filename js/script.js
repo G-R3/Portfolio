@@ -3,6 +3,7 @@ const nav = document.querySelector(".nav");
 const overlay = document.querySelector(".overlay");
 const navItems = document.querySelectorAll(".nav-item");
 const navbar = document.querySelector(".navbar");
+const navLogo = document.querySelector(".nav-logo");
 
 navbarToggler.addEventListener("click", () => {
     overlay.classList.toggle("overlay-show");
@@ -17,7 +18,11 @@ navItems.forEach((item) => {
         navbarToggler.classList.remove("toggle");
     });
 });
-
+navLogo.addEventListener("click", () => {
+    overlay.classList.remove("overlay-show");
+    nav.classList.remove("show-nav");
+    navbarToggler.classList.remove("toggle");
+});
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
         navbar.classList.add("nav-scrolled");
