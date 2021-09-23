@@ -7,4 +7,7 @@
 
 .overlay-show {
     filter: blur(5px);
+    @media (min-width: $screen-width-sm) {
+        filter: blur(0);
+    }
 }
