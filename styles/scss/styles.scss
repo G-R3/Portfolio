@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 @import "./variables";
-@import "./globals";
+@import "./_mixins";
 @import "./navbar";
 @import "./overlay";
 @import "./landing";
@@ -7,6 +8,47 @@
 @import "./projects";
 @import "./contact";
 @import "./_footer";
+
+:root {
+    --fontFamily: "Poppins", sans-serif;
+    --font-bold: 700;
+    --font-light: 300;
+    --clr: #181818;
+    --clr-2: #212121;
+    --clr-3: #424242;
+    --clr-4: #c9d9e6;
+    --clr-5: #ffffff;
+    --accent: #85adf7;
+}
+
+.dark-theme {
+    --background: var(--clr);
+    --text-color: var(--clr-4);
+    --font: var(--fontFamily);
+    --transition: all var(--transition-speed) ease;
+    --transition-speed: 300ms;
+    --clr-accent: var(--accent);
+    --nav-background: var(--clr-2);
+    --nav-shadow: 0 0 10px -5px #010101;
+    --nav-link-background: #312f2f;
+    --button-background: var(--clr-3);
+    --card-background: var(--clr-2);
+    --card-shadow: 0 0 10px -3px var(--clr);
+}
+.light-theme {
+    --background: #e2e6ee;
+    --text-color: var(--clr-3);
+    --font: var(--fontFamily);
+    --transition: all var(--transition-speed) ease;
+    --transition-speed: 300ms;
+    --clr-accent: var(--accent);
+    --nav-background: var(--clr-5);
+    --nav-shadow: 0 0 10px -5px var(--clr);
+    --nav-link-background: #f4f4f4;
+    --button-background: var(--clr-5);
+    --card-background: var(--clr-5);
+    --card-shadow: 0 0 8px -5px var(--clr);
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +57,10 @@
     scroll-behavior: smooth;
 }
 body {
-    background-color: $gray;
-    color: $text-primary;
-    font-family: $fontFamily;
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: var(--font);
+    transition: var(--transition);
     .main-container {
         padding: 0 1.2rem;
         @media (min-width: $screen-width-lg) {

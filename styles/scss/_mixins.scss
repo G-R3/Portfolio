@@ -2,7 +2,7 @@
 
 @mixin resetLinks() {
     text-decoration: none;
-    color: $text-secondary;
+    color: inherit;
 }
 @mixin buttons() {
     button {
@@ -13,7 +13,7 @@
         color: inherit;
         padding: 0.5rem;
         border: none;
-        background-color: $gray-3;
+        background-color: var(--button-background);
         font-size: map-get($fontSize, $key: "sm");
         opacity: 0.7;
         svg {
@@ -32,8 +32,9 @@
     .card {
         margin-bottom: 2rem;
         border-radius: 5px;
-        background-color: $gray-2;
-        transition: transform $transition-speed ease-out;
+        background-color: var(--card-background);
+        transition: transform var(--transition-speed) ease-out;
+        box-shadow: var(--card-shadow);
         &-img {
             width: 100%;
             height: auto;
@@ -56,23 +57,6 @@
                         position: relative;
                         margin: 0 0.4rem;
                         font-size: 1.3rem;
-                        span {
-                            background-color: #424141;
-                            border-radius: 5px;
-                            padding: 0.3rem;
-                            position: absolute;
-                            font-size: 0.8em;
-                            width: max-content;
-                            left: -35px;
-                            transition: transform $transition-speed
-                                cubic-bezier(0.33, 0.66, 0.66, 1);
-                            transform: scale(0);
-                        }
-                        &:hover {
-                            span {
-                                transform: scale(1) translateY(-40px);
-                            }
-                        }
                     }
                 }
             }

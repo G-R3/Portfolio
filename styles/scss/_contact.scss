@@ -10,7 +10,7 @@
     p {
         font-size: map-get($fontSize, $key: "sm");
         span {
-            color: $pink;
+            color: var(--clr-accent);
         }
     }
     .social-links {

@@ -12,14 +12,14 @@
             font-size: map-get($fontSize, $key: "lg");
             width: fit-content;
             position: relative;
-            background-color: rgba($pink, $alpha: 0.3);
+            background-color: rgba(var(--clr-accent), $alpha: 0.3);
             &::after {
                 content: "";
                 position: absolute;
-                background-color: $pink;
+                background-color: var(--clr-accent);
                 width: 100%;
                 height: 3px;
-                bottom: 0;
+                bottom: 3px;
                 left: 0;
             }
         }
