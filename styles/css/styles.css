@@ -99,7 +99,7 @@
 }
 
 .navbar .nav-item:hover .nav-item-link {
-  background-color: var(--nav-link-background);
+  background-color: var(--link-background);
 }
 
 @media (max-width: 768px) {
@@ -298,9 +298,10 @@
   color: inherit;
   padding: 0.5rem;
   border: none;
-  background-color: var(--button-background);
+  background: none;
   font-size: clamp(0.8rem, 1.125vw, 2.2rem);
-  opacity: 0.7;
+  -webkit-transition: all var(--transition-speed) ease;
+  transition: all var(--transition-speed) ease;
 }
 
 #landing .social-links a button svg {
@@ -308,7 +309,9 @@
 }
 
 #landing .social-links a button:hover {
-  opacity: 1;
+  background-color: var(--link-background);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 @media (min-width: 768px) {
@@ -559,9 +562,10 @@
   color: inherit;
   padding: 0.5rem;
   border: none;
-  background-color: var(--button-background);
+  background: none;
   font-size: clamp(0.8rem, 1.125vw, 2.2rem);
-  opacity: 0.7;
+  -webkit-transition: all var(--transition-speed) ease;
+  transition: all var(--transition-speed) ease;
 }
 
 #contact .social-links a button svg {
@@ -569,7 +573,9 @@
 }
 
 #contact .social-links a button:hover {
-  opacity: 1;
+  background-color: var(--link-background);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 @media (min-width: 768px) {
@@ -610,8 +616,7 @@
   --clr-accent: var(--accent);
   --nav-background: var(--clr-2);
   --nav-shadow: 0 0 10px -5px #010101;
-  --nav-link-background: #312f2f;
-  --button-background: var(--clr-3);
+  --link-background: #312f2f;
   --card-background: var(--clr-2);
   --card-shadow: 0 0 10px -3px var(--clr);
 }
@@ -625,8 +630,7 @@
   --clr-accent: var(--accent);
   --nav-background: var(--clr-5);
   --nav-shadow: 0 0 10px -5px var(--clr);
-  --nav-link-background: #f4f4f4;
-  --button-background: var(--clr-5);
+  --link-background: #f4f4f4;
   --card-background: var(--clr-5);
   --card-shadow: 0 0 8px -5px var(--clr);
 }
