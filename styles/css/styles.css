@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+:root {
+  --fontFamily: "Poppins", sans-serif;
+  --font-bold: 700;
+  --font-light: 300;
+  --clr: #181818;
+  --clr-2: #212121;
+  --clr-3: #424242;
+  --clr-4: #c9d9e6;
+  --clr-5: #ffffff;
+  --accent: #85adf7;
+}
+
 .tag {
   display: inline-block;
   padding: 0.125rem 0.2rem;
@@ -587,18 +599,6 @@
 
 .footer small span {
   color: var(--clr-accent);
-}
-
-:root {
-  --fontFamily: "Poppins", sans-serif;
-  --font-bold: 700;
-  --font-light: 300;
-  --clr: #181818;
-  --clr-2: #212121;
-  --clr-3: #424242;
-  --clr-4: #c9d9e6;
-  --clr-5: #ffffff;
-  --accent: #85adf7;
 }
 
 .dark-theme {

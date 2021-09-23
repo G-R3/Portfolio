@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 $screen-width-sm: 768px;
 $screen-width-lg: 900px;
 $fontSize: (
@@ -5,3 +6,15 @@ $fontSize: (
     "md": clamp(1.5rem, 3vw, 2.5rem),
     "sm": clamp(0.8rem, 1.125vw, 2.2rem),
 );
+
+:root {
+    --fontFamily: "Poppins", sans-serif;
+    --font-bold: 700;
+    --font-light: 300;
+    --clr: #181818;
+    --clr-2: #212121;
+    --clr-3: #424242;
+    --clr-4: #c9d9e6;
+    --clr-5: #ffffff;
+    --accent: #85adf7;
+}
