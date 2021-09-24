@@ -54,10 +54,10 @@
                 }
 
                 .project-links {
+                    display: flex;
                     a {
                         @include resetLinks();
-                        position: relative;
-                        margin: 0 0.4rem;
+                        margin-right: 1rem;
                         font-size: 1.3rem;
                     }
                 }
