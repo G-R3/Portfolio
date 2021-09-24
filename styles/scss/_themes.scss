@@ -1,4 +1,4 @@
-.dark-theme {
+@mixin main-theme {
     --background: var(--clr);
     --text-color: var(--clr-4);
     --font: var(--fontFamily);
@@ -10,6 +10,9 @@
     --link-background: #312f2f;
     --card-background: var(--clr-2);
     --card-shadow: 0 0 10px -3px var(--clr);
+}
+.dark-theme {
+    @include main-theme();
 }
 .light-theme {
     --background: #e2e6ee;

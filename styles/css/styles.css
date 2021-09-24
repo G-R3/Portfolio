@@ -1,4 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+.dark-theme {
+  --background: var(--clr);
+  --text-color: var(--clr-4);
+  --font: var(--fontFamily);
+  --transition: all var(--transition-speed) ease;
+  --transition-speed: 300ms;
+  --clr-accent: var(--accent);
+  --nav-background: var(--clr-2);
+  --nav-shadow: 0 0 10px -5px #010101;
+  --link-background: #312f2f;
+  --card-background: var(--clr-2);
+  --card-shadow: 0 0 10px -3px var(--clr);
+}
+
+.light-theme {
+  --background: #e2e6ee;
+  --text-color: var(--clr-3);
+  --font: var(--fontFamily);
+  --transition: all var(--transition-speed) ease;
+  --transition-speed: 300ms;
+  --clr-accent: var(--accent);
+  --nav-background: var(--clr-5);
+  --nav-shadow: 0 0 10px -5px var(--clr);
+  --link-background: #f4f4f4;
+  --card-background: var(--clr-5);
+  --card-shadow: 0 0 8px -5px var(--clr);
+}
+
 :root {
   --fontFamily: "Poppins", sans-serif;
   --font-bold: 700;
@@ -9,6 +37,17 @@
   --clr-4: #c9d9e6;
   --clr-5: #ffffff;
   --accent: #85adf7;
+  --background: var(--clr);
+  --text-color: var(--clr-4);
+  --font: var(--fontFamily);
+  --transition: all var(--transition-speed) ease;
+  --transition-speed: 300ms;
+  --clr-accent: var(--accent);
+  --nav-background: var(--clr-2);
+  --nav-shadow: 0 0 10px -5px #010101;
+  --link-background: #312f2f;
+  --card-background: var(--clr-2);
+  --card-shadow: 0 0 10px -3px var(--clr);
 }
 
 .tag {
@@ -647,34 +686,6 @@
 
 .footer small span {
   color: var(--clr-accent);
-}
-
-.dark-theme {
-  --background: var(--clr);
-  --text-color: var(--clr-4);
-  --font: var(--fontFamily);
-  --transition: all var(--transition-speed) ease;
-  --transition-speed: 300ms;
-  --clr-accent: var(--accent);
-  --nav-background: var(--clr-2);
-  --nav-shadow: 0 0 10px -5px #010101;
-  --link-background: #312f2f;
-  --card-background: var(--clr-2);
-  --card-shadow: 0 0 10px -3px var(--clr);
-}
-
-.light-theme {
-  --background: #e2e6ee;
-  --text-color: var(--clr-3);
-  --font: var(--fontFamily);
-  --transition: all var(--transition-speed) ease;
-  --transition-speed: 300ms;
-  --clr-accent: var(--accent);
-  --nav-background: var(--clr-5);
-  --nav-shadow: 0 0 10px -5px var(--clr);
-  --link-background: #f4f4f4;
-  --card-background: var(--clr-5);
-  --card-shadow: 0 0 8px -5px var(--clr);
 }
 
 * {
