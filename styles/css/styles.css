@@ -563,7 +563,7 @@
 #projects .card-container .card .card-content .card-header .project-links a {
   text-decoration: none;
   color: inherit;
-  margin-right: 1rem;
+  padding: 0.1rem 0.5rem;
   font-size: 1.3rem;
 }
 
