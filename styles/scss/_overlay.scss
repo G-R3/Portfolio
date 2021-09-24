@@ -5,6 +5,8 @@
     transition: filter var(--transition-speed) ease;
 }
 
-.overlay-show {
-    filter: blur(5px);
+@media (max-width: $screen-width-sm) {
+    .overlay-show {
+        filter: blur(5px);
+    }
 }

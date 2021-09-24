@@ -17,4 +17,6 @@ $fontSize: (
     --clr-4: #c9d9e6;
     --clr-5: #ffffff;
     --accent: #85adf7;
+
+    @include main-theme();
 }

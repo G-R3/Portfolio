@@ -22,6 +22,7 @@
         &:hover {
             background-color: var(--link-background);
             transform: translateY(-5px);
+            box-shadow: var(--nav-shadow);
         }
 
         @media (min-width: $screen-width-sm) {
