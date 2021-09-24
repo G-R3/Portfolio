@@ -79,6 +79,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: clamp(1rem, 1.2vw, 2rem);
   -webkit-transition: right var(--transition-speed) ease;
   transition: right var(--transition-speed) ease;
@@ -92,13 +95,46 @@
 .navbar .nav-item-link {
   text-decoration: none;
   color: inherit;
-  padding: 0.2rem 0.8rem;
   border-radius: 5px;
+  padding: 0.2rem 0.8rem;
   -webkit-transition: background-color var(--transition-speed) cubic-bezier(0.33, 0.66, 0.66, 1);
   transition: background-color var(--transition-speed) cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
 .navbar .nav-item:hover .nav-item-link {
+  background-color: var(--link-background);
+}
+
+.navbar .nav-item .dark-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  -webkit-transition: background-color var(--transition-speed) cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background-color var(--transition-speed) cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.navbar .nav-item .dark-btn:hover {
+  background-color: var(--link-background);
+}
+
+.navbar .nav-item .light-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  -webkit-transition: background-color var(--transition-speed) cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background-color var(--transition-speed) cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.navbar .nav-item .light-btn:hover {
   background-color: var(--link-background);
 }
 
@@ -228,9 +264,11 @@
   transition: filter var(--transition-speed) ease, -webkit-filter var(--transition-speed) ease;
 }
 
-.overlay-show {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+@media (max-width: 768px) {
+  .overlay-show {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
 }
 
 #landing {
@@ -312,6 +350,8 @@
   background-color: var(--link-background);
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+  -webkit-box-shadow: var(--nav-shadow);
+          box-shadow: var(--nav-shadow);
 }
 
 @media (min-width: 768px) {
@@ -576,6 +616,8 @@
   background-color: var(--link-background);
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+  -webkit-box-shadow: var(--nav-shadow);
+          box-shadow: var(--nav-shadow);
 }
 
 @media (min-width: 768px) {
