@@ -86,6 +86,21 @@
   color: #fff;
 }
 
+.tag-react {
+  background-color: #5fd9fb;
+  color: #000;
+}
+
+.tag-tailwind {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+.tag-spotify {
+  background-color: #1db954;
+  color: #fff;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,6 +494,21 @@
 
 .tag-node {
   background-color: #026e00;
+  color: #fff;
+}
+
+.tag-react {
+  background-color: #5fd9fb;
+  color: #000;
+}
+
+.tag-tailwind {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+.tag-spotify {
+  background-color: #1db954;
   color: #fff;
 }
 
