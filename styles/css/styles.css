@@ -101,6 +101,16 @@
   color: #fff;
 }
 
+.tag-chakra {
+  background-color: #319795;
+  color: #fff;
+}
+
+.tag-typescript {
+  background-color: #3178c6;
+  color: #fff;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,6 +519,16 @@
 
 .tag-spotify {
   background-color: #1db954;
+  color: #fff;
+}
+
+.tag-chakra {
+  background-color: #319795;
+  color: #fff;
+}
+
+.tag-typescript {
+  background-color: #3178c6;
   color: #fff;
 }
 
