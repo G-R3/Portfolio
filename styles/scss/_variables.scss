@@ -2,9 +2,9 @@
 $screen-width-sm: 768px;
 $screen-width-lg: 900px;
 $fontSize: (
-    "lg": clamp(1.5rem, 5vw, 10rem),
+    "lg": clamp(2rem, 5vw, 10rem),
     "md": clamp(1.5rem, 3vw, 2.5rem),
-    "sm": clamp(0.8rem, 1.125vw, 2.2rem),
+    "sm": clamp(1rem, 1.125vw, 2.2rem),
 );
 
 :root {
